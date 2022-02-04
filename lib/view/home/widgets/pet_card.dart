@@ -37,6 +37,11 @@ class PetCard extends StatelessWidget {
                   decoration: BoxDecoration(
                     color: Colors.blue,
                     borderRadius: BorderRadius.circular(12),
+                    image: pet.photoPath != null
+                        ? DecorationImage(
+                            image: Image.asset(pet.photoPath!).image,
+                          )
+                        : null,
                   ),
                 );
               },
