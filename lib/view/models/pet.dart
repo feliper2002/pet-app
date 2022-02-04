@@ -24,6 +24,6 @@ class Pet {
     this.distance,
     this.petDistanceType,
     this.photoPath,
-    this.favorite,
+    this.favorite = false,
   });
 }

@@ -6,4 +6,6 @@ class AppColors {
   static const Color favoriteIcon = Color(0xFFF54153);
 
   static const Color filterSelection = Color(0xFFF54153);
+
+  static const Color textGrey = Color(0xFFB8B8B8);
 }

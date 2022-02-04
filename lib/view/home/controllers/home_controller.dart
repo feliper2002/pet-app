@@ -10,6 +10,7 @@ class HomeController {
       petAge: PetAge.months,
       distance: 2.5,
       petDistanceType: PetDistanceType.km,
+      favorite: true,
     ),
     Pet(
       name: 'Charlie',
@@ -19,6 +20,7 @@ class HomeController {
       petAge: PetAge.years,
       distance: 2.6,
       petDistanceType: PetDistanceType.km,
+      favorite: true,
     ),
     Pet(
       name: 'Max',
@@ -28,6 +30,7 @@ class HomeController {
       petAge: PetAge.years,
       distance: 2.9,
       petDistanceType: PetDistanceType.km,
+      favorite: false,
     ),
     Pet(
       name: 'Daisy',
@@ -37,6 +40,7 @@ class HomeController {
       petAge: PetAge.months,
       distance: 3.1,
       petDistanceType: PetDistanceType.km,
+      favorite: false,
     ),
   ];
 

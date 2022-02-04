@@ -38,23 +38,64 @@ class PetCard extends StatelessWidget {
             },
           ),
           Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(pet.name!),
-              Text(pet.type!),
+              Text(
+                pet.name!,
+                style: const TextStyle(
+                  fontWeight: FontWeight.w900,
+                  fontSize: 20,
+                ),
+              ),
+              const SizedBox(height: 10),
+              Text(
+                pet.type!,
+                style: const TextStyle(),
+              ),
+              const SizedBox(height: 6),
               Row(
                 children: [
-                  Text(controller.getPetSex(pet.sex!)),
-                  Text('${pet.age}, ${controller.getPetAge(pet.petAge!)}'),
+                  Text(
+                    controller.getPetSex(pet.sex!),
+                    style: const TextStyle(
+                      color: AppColors.textGrey,
+                    ),
+                  ),
+                  const SizedBox(width: 6),
+                  Text(
+                    '${pet.age}, ${controller.getPetAge(pet.petAge!)}',
+                    style: const TextStyle(
+                      color: AppColors.textGrey,
+                    ),
+                  ),
                 ],
               ),
-              Text(
-                  '${pet.distance} ${controller.getPetDistance(pet.petDistanceType!)}'),
+              const SizedBox(height: 12),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  const Icon(
+                    Icons.location_on,
+                    color: AppColors.favoriteIcon,
+                    size: 20,
+                  ),
+                  const SizedBox(width: 3),
+                  Text(
+                    '${pet.distance} ${controller.getPetDistance(pet.petDistanceType!)}',
+                    style: const TextStyle(
+                      color: AppColors.textGrey,
+                    ),
+                  ),
+                ],
+              ),
             ],
           ),
           const Spacer(),
-          const Icon(Icons.favorite, color: AppColors.favoriteIcon),
+          Icon(pet.favorite! ? Icons.favorite : Icons.favorite_outline,
+              color:
+                  pet.favorite! ? AppColors.favoriteIcon : AppColors.textGrey,
+              size: 28),
         ],
       ),
     );
