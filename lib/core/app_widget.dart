@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pet_app/view/home/home.page.dart';
+import 'package:pet_app/view/pet/pet.page.dart';
 
 class AppWidget extends StatelessWidget {
   const AppWidget({Key? key}) : super(key: key);
@@ -12,6 +13,7 @@ class AppWidget extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => HomePage(),
+        '/pet': (context) => PetPage(),
       },
     );
   }

@@ -14,7 +14,7 @@ class PetCard extends StatelessWidget {
     final size = MediaQuery.of(context).size;
     return GestureDetector(
       onTap: () {
-        Navigator.pushNamed(context, '/');
+        Navigator.pushNamed(context, '/pet', arguments: pet);
       },
       child: Container(
         height: size.height * .17,
