@@ -16,4 +16,6 @@ class AppColors {
   static const Color sexIcon = Color(0xFFDBDBDB);
 
   static const Color adoptBtn = Color(0xFFF54153);
+
+  static const Color smallPetContainerBorder = Color(0xFFBDBDBD);
 }

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:pet_app/utils/colors.dart';
 import 'package:pet_app/view/home/controllers/home_controller.dart';
 import 'package:pet_app/view/home/widgets/adopt_btn.dart';
+import 'package:pet_app/view/home/widgets/small_pet_pic_list.dart';
 import 'package:pet_app/view/models/pet.dart';
 
 class PetPage extends StatelessWidget {
@@ -97,6 +98,14 @@ class PetPage extends StatelessWidget {
               ],
             ),
           ),
+          Container(
+            margin: const EdgeInsets.only(left: 20, top: 36),
+            child: Row(
+              children: const [
+                SmallPetPictureList(),
+              ],
+            ),
+          ),
           const Spacer(),
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -123,7 +132,9 @@ class PetPage extends StatelessWidget {
               ],
             ),
           ),
-          const AdoptButton(),
+          AdoptButton(
+            onTap: () {},
+          ),
         ],
       ),
     );

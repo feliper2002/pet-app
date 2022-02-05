@@ -1,6 +1,22 @@
+import 'package:pet_app/view/models/filter_option.dart';
 import 'package:pet_app/view/models/pet.dart';
 
 class HomeController {
+  final filterOptions = <FilterOption>[
+    FilterOption(
+      title: 'Dogs',
+      icon: null,
+    ),
+    FilterOption(
+      title: 'Cats',
+      icon: null,
+    ),
+    FilterOption(
+      title: 'Birds',
+      icon: null,
+    ),
+  ];
+
   final petList = <Pet>[
     Pet(
       name: 'Sparky',

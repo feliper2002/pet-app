@@ -2,30 +2,46 @@ import 'package:flutter/material.dart';
 import 'package:pet_app/utils/colors.dart';
 
 class AdoptButton extends StatelessWidget {
-  const AdoptButton({Key? key}) : super(key: key);
+  final Function? onTap;
+  const AdoptButton({Key? key, this.onTap}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return CustomPaint(
-      painter: _AdoptButtonPaint(),
-      child: Stack(
-        children: [
-          Container(
-            height: 100,
-          ),
-          const Positioned(
-            right: 60,
-            top: 55,
-            child: Text(
-              'ADOPT',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 20,
-                fontWeight: FontWeight.w600,
+    return GestureDetector(
+      onTap: onTap as void Function(),
+      child: CustomPaint(
+        painter: _AdoptButtonPaint(),
+        child: Stack(
+          children: [
+            Container(
+              height: 100,
+            ),
+            Positioned(
+              right: 50,
+              top: 55,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Image.asset(
+                    'assets/icons/pet_feet.png',
+                    color: Colors.white,
+                    height: 25,
+                    width: 25,
+                  ),
+                  const SizedBox(width: 15),
+                  const Text(
+                    'ADOPT',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ],
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
