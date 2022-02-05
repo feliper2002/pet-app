@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pet_app/utils/colors.dart';
 
 class AppBarWidget extends PreferredSize {
   AppBarWidget({Key? key})
@@ -10,14 +11,19 @@ class AppBarWidget extends PreferredSize {
             backgroundColor: Colors.white,
             centerTitle: true,
             title: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                const Icon(Icons.face, color: Colors.black),
+                const Icon(
+                  Icons.face,
+                  color: AppColors.backArrow,
+                  size: 32,
+                ),
+                const Spacer(),
                 Column(
                   children: const [
                     Text('Location',
                         style: TextStyle(
-                          color: Colors.black,
+                          color: AppColors.textGrey,
+                          fontSize: 14,
                         )),
                     Text('Cameron St., Boston',
                         style: TextStyle(
@@ -25,6 +31,7 @@ class AppBarWidget extends PreferredSize {
                         )),
                   ],
                 ),
+                const Spacer(),
                 const CircleAvatar(
                   radius: 22,
                   backgroundColor: Colors.red,
