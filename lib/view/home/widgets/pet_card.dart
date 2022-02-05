@@ -39,7 +39,7 @@ class PetCard extends StatelessWidget {
                     borderRadius: BorderRadius.circular(12),
                     image: pet.photoPath != null
                         ? DecorationImage(
-                            fit: BoxFit.fill,
+                            fit: BoxFit.cover,
                             image: Image.asset(
                               pet.photoPath!,
                             ).image,

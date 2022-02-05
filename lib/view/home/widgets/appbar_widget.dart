@@ -29,9 +29,11 @@ class AppBarWidget extends PreferredSize {
                   ],
                 ),
                 const Spacer(),
-                const CircleAvatar(
+                CircleAvatar(
                   radius: 22,
                   backgroundColor: Colors.red,
+                  backgroundImage:
+                      Image.asset('assets/images/profile.jpeg').image,
                 ),
               ],
             ),
