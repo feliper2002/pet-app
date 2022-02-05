@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pet_app/utils/colors.dart';
-import 'package:pet_app/view/pet/widgets/list_icon.dart';
+import 'package:pet_app/view/home/widgets/list_icon.dart';
 
 class AppBarWidget extends PreferredSize {
   AppBarWidget({Key? key})
