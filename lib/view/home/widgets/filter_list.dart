@@ -8,9 +8,10 @@ class FilterList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
+    return Container(
       height: 68,
       width: double.infinity,
+      margin: const EdgeInsets.only(bottom: 10),
       child: ListView.builder(
         padding: const EdgeInsets.only(left: 16, top: 20),
         scrollDirection: Axis.horizontal,
