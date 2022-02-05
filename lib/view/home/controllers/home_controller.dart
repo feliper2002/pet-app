@@ -35,6 +35,8 @@ class HomeController {
       distance: 2.5,
       petDistanceType: PetDistanceType.km,
       favorite: true,
+      photoPath: 'assets/images/golden.jpg',
+      mainPhoto: 'assets/images/golden_main.jpg',
     ),
     Pet(
       name: 'Charlie',
@@ -45,6 +47,8 @@ class HomeController {
       distance: 2.6,
       petDistanceType: PetDistanceType.km,
       favorite: true,
+      photoPath: 'assets/images/terrier.jpg',
+      mainPhoto: 'assets/images/terrier_main.jpg',
     ),
     Pet(
       name: 'Max',
@@ -55,6 +59,8 @@ class HomeController {
       distance: 2.9,
       petDistanceType: PetDistanceType.km,
       favorite: false,
+      photoPath: 'assets/images/husky.jpg',
+      mainPhoto: 'assets/images/husky_main.png',
     ),
     Pet(
       name: 'Daisy',
@@ -65,6 +71,8 @@ class HomeController {
       distance: 3.1,
       petDistanceType: PetDistanceType.km,
       favorite: false,
+      photoPath: 'assets/images/maltese.jpg',
+      mainPhoto: 'assets/images/maltese_main.jpg',
     ),
   ];
 

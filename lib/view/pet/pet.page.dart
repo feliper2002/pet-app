@@ -64,9 +64,14 @@ class PetPage extends StatelessWidget {
           Container(
             margin: const EdgeInsets.only(left: 20, top: 36),
             child: Row(
-              children: const [
-                SmallPetPictureList(),
-                Spacer(),
+              children: [
+                const SmallPetPictureList(),
+                const Spacer(),
+                Image.asset(
+                  pet.mainPhoto!,
+                  height: 215,
+                  width: 215,
+                ),
               ],
             ),
           ),

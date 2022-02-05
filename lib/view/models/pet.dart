@@ -12,6 +12,7 @@ class Pet {
   final double? distance;
   final PetDistanceType? petDistanceType;
   final String? photoPath;
+  final String? mainPhoto;
   final bool? favorite;
   Pet({
     this.name,
@@ -24,6 +25,7 @@ class Pet {
     this.distance,
     this.petDistanceType,
     this.photoPath,
+    this.mainPhoto,
     this.favorite = false,
   });
 }
