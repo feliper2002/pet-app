@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pet_app/utils/colors.dart';
+import 'package:pet_app/view/pet/widgets/list_icon.dart';
 
 class AppBarWidget extends PreferredSize {
   AppBarWidget({Key? key})
@@ -12,11 +13,7 @@ class AppBarWidget extends PreferredSize {
             centerTitle: true,
             title: Row(
               children: [
-                const Icon(
-                  Icons.face,
-                  color: AppColors.backArrow,
-                  size: 32,
-                ),
+                const ListIcon(),
                 const Spacer(),
                 Column(
                   children: const [

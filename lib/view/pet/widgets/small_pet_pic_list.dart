@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:pet_app/view/home/widgets/small_pet_container.dart';
+
+import 'small_pet_container.dart';
 
 class SmallPetPictureList extends StatelessWidget {
   final List<String>? imagesPaths;

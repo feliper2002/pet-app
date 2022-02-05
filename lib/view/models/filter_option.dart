@@ -2,9 +2,11 @@ import 'package:flutter/cupertino.dart';
 
 class FilterOption {
   final String? title;
-  final Widget? icon;
+  final String? iconPath;
+  final bool? selected;
   FilterOption({
     this.title,
-    this.icon,
+    this.iconPath,
+    this.selected,
   });
 }

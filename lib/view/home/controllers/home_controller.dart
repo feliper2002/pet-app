@@ -4,16 +4,24 @@ import 'package:pet_app/view/models/pet.dart';
 class HomeController {
   final filterOptions = <FilterOption>[
     FilterOption(
+      title: null,
+      iconPath: "assets/icons/filter.png",
+      selected: false,
+    ),
+    FilterOption(
       title: 'Dogs',
-      icon: null,
+      iconPath: "assets/icons/dog.png",
+      selected: true,
     ),
     FilterOption(
       title: 'Cats',
-      icon: null,
+      iconPath: "assets/icons/cat.png",
+      selected: false,
     ),
     FilterOption(
       title: 'Birds',
-      icon: null,
+      iconPath: "assets/icons/parrot.png",
+      selected: false,
     ),
   ];
 
